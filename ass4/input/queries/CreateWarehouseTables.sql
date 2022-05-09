@@ -25,7 +25,7 @@ create table CalendarDim (
     DayOfMonth int not null,
     [Month] int not null,
     Quarter int not null,
-    [Year] int not null,
+    [Year] int not null
 );
 
 create table OfficerDim (
@@ -40,7 +40,7 @@ create table TicketTypeDim (
     Category varchar not null,
     Violation varchar not null,
     Fee int not null
-)
+);
 
 create table TicketRevenueFactTable (
     Id integer not null primary key autoincrement,
