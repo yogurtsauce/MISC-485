@@ -38,7 +38,7 @@ Hint:
 
 ## Creating the tables
 
-<details><summary>test</summary>
+## <details><summary>test</summary>
 <p>
 test
 </p>
