@@ -35,3 +35,5 @@ Hint:
 ## Schemas and tables
 ![image1](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image1.jpg)
 ![image2](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image2.jpg)
+
+## Creating the tables
