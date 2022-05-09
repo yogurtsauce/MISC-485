@@ -5,7 +5,7 @@
 - [Assignment 4](#assignment-4)
   - [Requirements](#requirements)
   - [Schemas and tables](#schemas-and-tables)
-  - [Creating the tables](#creating-the-tables)
+  - [Queries](#queries)
 
 ## Requirements
 
@@ -44,8 +44,8 @@
 ![image1](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image1.jpg)
 ![image2](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image2.jpg)
 
-## Creating the tables
+## Queries
 
-[View the queries](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/queries/CreateTables.sql)
+[View the queries](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/queries)
 
 </details>
