@@ -34,7 +34,7 @@ def query2(filename): #no row names
 
     with open(filepath, "r")as sql:
         query = sql.read()
-        results = cursor.execute(query).fetchall()
+        results = cursor.executescript(query).fetchall()
         appendtooutput = open(outputdir, "a")
 
         records = []
@@ -46,5 +46,6 @@ def query2(filename): #no row names
 
 
 query('TableNames')
-query('selectofficer')
-query2('Officer')
+# query2('Officer')
+query2('PopulateOfficerDim')
+query('ViewOfficerDim')
