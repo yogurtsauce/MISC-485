@@ -1,6 +1,7 @@
 # Assignment 4
 ## Requirements
 **Question 1:** 
+
 E8.2 in Chapter 8. (Note: 1st Edition: there are some typos in Figure 8.43. In Figure 8.46, please remove any space inside a field name). Please do E8.2a (manually populate the tables in Figure 8.42), E8.2b, and E8.2c. No SQLs are needed.
 
 Note: please add ticket type ID for TicketType dimension.
