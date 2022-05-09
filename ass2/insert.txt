@@ -1,0 +1,16 @@
+insert into Agent(FirstName, LastName) VALUES ('jimmy', 'johns');
+insert into Agent(FirstName, LastName) VALUES ('fname1', 'lname1');
+insert into Agent(FirstName, LastName) VALUES ('fname2', 'lname2');
+insert into Agent(FirstName, LastName) VALUES ('fname3', 'lname3');
+insert into Author(FirstName,LastName, AgentId) values ('Stephen','hawking','1')
+insert into Author(FirstName,LastName, AgentId) values ('fname1','lname1','2')
+insert into Author(FirstName,LastName, AgentId) values ('fname2','lname2','3')
+insert into Author(FirstName,LastName, AgentId) values ('fname3','lname3','4')
+insert into Editor(FirstName, LastName) values ('john','lennon')
+insert into Book (AuthorId, EditorId, Genre, BookName, PubDate, NumPages) values ('1','1','fantasy','fantastybook','01/01/01','22')
+insert into Book (AuthorId, EditorId, Genre, BookName, PubDate, NumPages) values ('2','2','genre1','book1','01/01/02','99')
+insert into Book (AuthorId, EditorId, Genre, BookName, PubDate, NumPages) values ('3','3','genre2','book2','01/01/03','1000')
+insert into Book (AuthorId, EditorId, Genre, BookName, PubDate, NumPages) values ('4','4','genre3','book3','01/01/04','200')
+insert into Mentor values ('1','1')
+insert into Mentor values ('2','2')
+insert into Mentor values ('3','3')
