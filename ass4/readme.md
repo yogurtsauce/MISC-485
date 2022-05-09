@@ -1,14 +1,14 @@
 # Assignment 4
+
 ## Requirements
-**Question 1:** 
+
+**Question 1:**
 
     E8.2 in Chapter 8. (Note: 1st Edition: there are some typos in Figure 8.43. In Figure 8.46, please remove any space inside a field name). Please do E8.2a (manually populate the tables in Figure 8.42), E8.2b, and E8.2c. No SQLs are needed.
 
     Note: please add ticket type ID for TicketType dimension.
 
     Submit your answers in one Word file.
-
- 
 
 **Question 2:**
 
@@ -33,13 +33,12 @@ Hint:
     You may use Union in SQL query to get the data from two or more tables.
 
 ## Schemas and tables
+
+<details><summary>Open</summary>
+
 ![image1](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image1.jpg)
 ![image2](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image2.jpg)
 
-## Creating the tables
-
-## <details><summary>test</summary>
-<p>
-test
-</p>
 </details>
+
+## Creating the tables
