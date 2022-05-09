@@ -31,3 +31,6 @@ Hint:
     It’s a good practice to prepare needed data by query (or queries, several queries can be used for a complex task).
     You may use Union in SQL query to get all Dates from DrivingTicket and ParkingTicket tables.
     You may use Union in SQL query to get the data from two or more tables.
+
+## Schemas and tables
+[image1]('input/images/image1.jpg')
