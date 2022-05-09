@@ -1,5 +1,12 @@
 # Assignment 4
 
+## Table Of Contents <!-- omit in toc -->
+
+- [Assignment 4](#assignment-4)
+  - [Requirements](#requirements)
+  - [Schemas and tables](#schemas-and-tables)
+  - [Creating the tables](#creating-the-tables)
+
 ## Requirements
 
 **Question 1:**
@@ -12,7 +19,7 @@
 
 **Question 2:**
 
-    Step1: Use Access to create the operational database (E8.2) City Police Department and input sample data as shown in Figure 8.39 (1st Edition 8.43) and Figure 8.40 (1st Edition, 8.44).
+    Step 1: Use Access to create the operational database (E8.2) City Police Department and input sample data as shown in Figure 8.39 (1st Edition 8.43) and Figure 8.40 (1st Edition, 8.44).
 
     Step 2: Use SQL statements to create the data warehouse table structures (without data) based on the star schema as shown in Figure 8.41 (1st Edition: 8.45) and Figure 8.42 (1st Edition 8.46).
 
@@ -26,7 +33,7 @@
 
     Please submit an Access file.
 
-Hint:
+**Hint:**
 
     It’s a good practice to prepare needed data by query (or queries, several queries can be used for a complex task).
     You may use Union in SQL query to get all Dates from DrivingTicket and ParkingTicket tables.
@@ -34,11 +41,8 @@ Hint:
 
 ## Schemas and tables
 
-<details><summary>Open</summary>
-
 ![image1](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image1.jpg)
 ![image2](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image2.jpg)
 
-</details>
-
 ## Creating the tables
+![code](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/code/CreateTables.py)
