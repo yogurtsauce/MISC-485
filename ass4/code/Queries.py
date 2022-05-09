@@ -5,35 +5,20 @@ conn = sqlite3.connect('database/database.db')
 cursor = conn.cursor()
 
 
-def query(input):
-    results = cursor.execute(input).fetchall()
-    colnames = cursor.description
+def query(filename):
+    filepath = (f"input/queries/{filename}.sql")
+    with open(filepath, "r")as sql:
+        query = sql.read()
+        results = cursor.execute(query).fetchall()
+        colnames = cursor.description
 
-    NameOfColumns = []
-    for name in colnames:
-        NameOfColumns.append(name[0])
-    print(NameOfColumns)
+        NameOfColumns = []
+        for name in colnames:
+            NameOfColumns.append(name[0])
+        print(NameOfColumns)
 
-    for row in results:
-        print(row)
-
-
-# query('''
-#       select name
-#       from sqlite_master
-#       where type = "table"
-#       ''')
-query('''
-      select * from Customer
-               ''')
-
-file = open(r"input/queries/customer.sql")
-
-with file as sql:
-    query = sql.read()
-    results = cursor.execute(query).fetchall()
-    for row in results:
-        print(row)
+        for row in results:
+            print(row)
 
 
-cursor.close()
+query('customer')

@@ -6,6 +6,7 @@
   - [Requirements](#requirements)
   - [Schemas and tables](#schemas-and-tables)
   - [Queries](#queries)
+  - [Query Results](#query-results)
 
 ## Requirements
 
@@ -47,5 +48,7 @@
 ## Queries
 
 [View the queries](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/queries)
+
+## Query Results
 
 </details>
