@@ -27,6 +27,4 @@ def query(filename):
         for things in records:
             appendtooutput.write(str(things)+'\n')
 
-
-query('customer')
 query('TableNames')
