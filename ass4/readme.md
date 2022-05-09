@@ -45,4 +45,76 @@
 ![image2](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image2.jpg)
 
 ## Creating the tables
-![code](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/code/CreateTables.py)
+```
+createTable('''
+            create table Vendor (
+                Id integer not null primary key autoincrement,
+                Name varchar not null
+            )
+    ''')
+
+
+createTable('''
+            create table Category (
+                Id integer not null primary key autoincrement,
+                Name varchar not null
+            )
+    ''')
+
+
+createTable('''
+            create table Product (
+                Id integer not null primary key autoincrement,
+                Price int not null,
+                Name varchar not null,
+                VendorId integer not null references Vendor(Id),
+                CategoryId integer not null references Category(Id)
+            )
+    ''')
+
+
+createTable('''
+            create table Customer (
+                Id integer not null primary key autoincrement,
+                Name varchar not null,
+                Zip int not null
+            )
+    ''')
+
+
+createTable('''
+            create table Region (
+                Id integer not null primary key autoincrement,
+                Name varchar not null
+            )
+    ''')
+
+
+createTable('''
+            create table Store (
+                Id integer not null primary key autoincrement,
+                Zip int not null,
+                RegionId integer not null references Region(Id)
+            )
+    ''')
+
+
+createTable('''
+            create table SalesTransaction (
+                Id integer not null primary key autoincrement,
+                Date date not null,
+                StoreId integer not null references Store(Id),
+                CustomerId integer not null references Customer(Id)
+            )
+    ''')
+
+
+createTable('''
+            create table Includes (
+                ProductId integer not null references Product(Id),
+                TId integer not null references SalesTransaction(Id),
+                Quantity int not null,
+                primary key (ProductId, TId)
+            )
+    ''')
+```
