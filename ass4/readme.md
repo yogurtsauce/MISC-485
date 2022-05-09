@@ -51,4 +51,4 @@
 
 ## Query Results
 
-[View the outputs]()
+[View the outputs](https://github.com/yogurtsauce/MISC-485/tree/master/ass4/output/queries)
