@@ -10,4 +10,3 @@ def CreateDatabase(name):
         if connect:
             connect.close()
 
-CreateDatabase(r'ass4.db')
