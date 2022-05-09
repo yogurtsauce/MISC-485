@@ -58,5 +58,7 @@ Eventually the main.py will be updated to import the functions and the creation 
 ## Queries
 
 [View the queries](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/queries)
+
 [View the outputs](https://github.com/yogurtsauce/MISC-485/tree/master/ass4/output/queries)
+
 [View the insert](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/data/insert.sql)
