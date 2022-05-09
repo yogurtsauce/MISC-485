@@ -5,7 +5,7 @@ conn = sqlite3.connect('database/database.db')
 cursor = conn.cursor()
 
 
-def query(filename):
+def query(filename): #with row names
     filepath = (f"input/queries/{filename}.sql")
     outputdir = (f"output/queries/{filename}.txt")
 
@@ -27,5 +27,24 @@ def query(filename):
         for things in records:
             appendtooutput.write(str(things)+'\n')
 
+
+def query2(filename): #no row names
+    filepath = (f"input/queries/{filename}.sql")
+    outputdir = (f"output/queries/{filename}.txt")
+
+    with open(filepath, "r")as sql:
+        query = sql.read()
+        results = cursor.execute(query).fetchall()
+        appendtooutput = open(outputdir, "a")
+
+        records = []
+        for row in results:
+            records.append(row)
+
+        for things in records:
+            appendtooutput.write(str(things)+'\n')
+
+
 query('TableNames')
 query('selectofficer')
+query2('Officer')
