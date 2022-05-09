@@ -37,3 +37,9 @@ Hint:
 ![image2](https://github.com/yogurtsauce/MISC-485/blob/master/ass4/input/images/image2.jpg)
 
 ## Creating the tables
+
+<details><summary>test</summary>
+<p>
+test
+</p>
+</details>
