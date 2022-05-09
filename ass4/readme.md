@@ -3,12 +3,23 @@
 ## Table Of Contents <!-- omit in toc -->
 
 - [Assignment 4](#assignment-4)
-  - [Requirements](#requirements)
+  - [How it works](#how-it-works)
+  - [Assignment Requirements](#assignment-requirements)
   - [Schemas and tables](#schemas-and-tables)
   - [Queries](#queries)
   - [Query Results](#query-results)
 
-## Requirements
+## How it works
+
+CreateTables.py will run the create table queries found in input/queries.
+
+Insert.py will insert data from input/data.
+
+Queries.py will run specificied queries and put the results into output/queries.
+
+Eventually the main.py will be updated to import the functions and the creation of tables/inserts/queries will all be in there.
+
+## Assignment Requirements
 
 **Question 1:**
 

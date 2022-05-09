@@ -28,3 +28,4 @@ def query(filename):
             appendtooutput.write(str(things)+'\n')
 
 query('TableNames')
+query('selectofficer')
