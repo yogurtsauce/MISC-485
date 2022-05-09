@@ -1,0 +1,10 @@
+['name']
+('sqlite_sequence',)
+('Vendor',)
+('Category',)
+('Product',)
+('Customer',)
+('Region',)
+('Store',)
+('SalesTransaction',)
+('Includes',)

@@ -18,7 +18,6 @@ def query(filename):
         NameOfColumns = []
         for name in colnames:
             NameOfColumns.append(name[0])
-        print(NameOfColumns)
         appendtooutput.write(str(NameOfColumns)+'\n')
 
         records = []
@@ -30,3 +29,4 @@ def query(filename):
 
 
 query('customer')
+query('TableNames')
