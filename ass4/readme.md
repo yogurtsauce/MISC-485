@@ -51,4 +51,4 @@
 
 ## Query Results
 
-</details>
+[View the outputs]()
