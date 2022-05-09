@@ -52,7 +52,7 @@
 ```
 createTable('''
             create table Vendor (
-                Id integer not null primary key autoincrement,
+                Id varchar not null primary key,
                 Name varchar not null
             )
     ''')
@@ -60,7 +60,7 @@ createTable('''
 
 createTable('''
             create table Category (
-                Id integer not null primary key autoincrement,
+                Id varchar not null primary key,
                 Name varchar not null
             )
     ''')
@@ -68,18 +68,18 @@ createTable('''
 
 createTable('''
             create table Product (
-                Id integer not null primary key autoincrement,
+                Id varchar not null primary key,
                 Price int not null,
                 Name varchar not null,
-                VendorId integer not null references Vendor(Id),
-                CategoryId integer not null references Category(Id)
+                VendorId varchar not null references Vendor(Id),
+                CategoryId varchar not null references Category(Id)
             )
     ''')
 
 
 createTable('''
             create table Customer (
-                Id integer not null primary key autoincrement,
+                Id varchar not null primary key,
                 Name varchar not null,
                 Zip int not null
             )
@@ -88,7 +88,7 @@ createTable('''
 
 createTable('''
             create table Region (
-                Id integer not null primary key autoincrement,
+                Id varchar not null primary key,
                 Name varchar not null
             )
     ''')
@@ -96,27 +96,27 @@ createTable('''
 
 createTable('''
             create table Store (
-                Id integer not null primary key autoincrement,
+                Id varchar not null primary key,
                 Zip int not null,
-                RegionId integer not null references Region(Id)
+                RegionId varchar not null references Region(Id)
             )
     ''')
 
 
 createTable('''
             create table SalesTransaction (
-                Id integer not null primary key autoincrement,
+                Id varchar not null primary key,
                 Date date not null,
-                StoreId integer not null references Store(Id),
-                CustomerId integer not null references Customer(Id)
+                StoreId varchar not null references Store(Id),
+                CustomerId varchar not null references Customer(Id)
             )
     ''')
 
 
 createTable('''
             create table Includes (
-                ProductId integer not null references Product(Id),
-                TId integer not null references SalesTransaction(Id),
+                ProductId varchar not null references Product(Id),
+                TId varchar not null references SalesTransaction(Id),
                 Quantity int not null,
                 primary key (ProductId, TId)
             )
