@@ -4,18 +4,18 @@ conn = sqlite3.connect('database/database.db')
 
 cursor = conn.cursor()
 
+
 def query(input):
     results = cursor.execute(input).fetchall()
     colnames = cursor.description
-    
+
     NameOfColumns = []
     for name in colnames:
         NameOfColumns.append(name[0])
     print(NameOfColumns)
-    
+
     for row in results:
         print(row)
-    
 
 
 # query('''
@@ -27,7 +27,13 @@ query('''
       select * from Customer
                ''')
 
+file = open(r"input/queries/customer.sql")
 
+with file as sql:
+    query = sql.read()
+    results = cursor.execute(query).fetchall()
+    for row in results:
+        print(row)
 
 
 cursor.close()
