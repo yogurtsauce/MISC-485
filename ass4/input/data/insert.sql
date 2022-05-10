@@ -34,34 +34,37 @@ values ('PT3333', '2020-01-02', '3', 'IL3333', 'P2');
 delete from ParkingTicketType;
 
 insert into ParkingTicketType
-values ('P1', 'Meter Expired', '100');
+values ('P1', 'Meter Expired', 100);
 
 insert into ParkingTicketType
-values ('P2', 'Hydrant', '150');
+values ('P2', 'Hydrant', 150);
 
 delete from DrivingTicketType;
 
 insert into DrivingTicketType
-values ('D1', 'Red Light', '200');
+values ('D1', 'Red Light', 200);
 
 insert into DrivingTicketType
-values ('D2', 'Seat Belt', '100');
+values ('D2', 'Seat Belt', 100);
 
 delete from Vehicle;
 
 insert into Vehicle
-values ('IL1111', 'Honda', 'CRV');
+values ('IL1111', 'Honda', 'CRV', 2017);
 
 insert into Vehicle
-values ('IL2222', 'Honda', 'Civic');
+values ('IL2222', 'Honda', 'Civic', 2020);
 
 insert into Vehicle
-values ('IL3333', 'Honda', 'Civic');
+values ('IL3333', 'Honda', 'Civic', 2018);
 
 delete from Driver;
 
 insert into Driver
-values ('111', 'Bill', 'Male', '1998');
+values ('111', 'Bill', 'Male', 1998);
 
 insert into Driver
-values ('222', 'Suzy', 'Female', '1987');
+values ('222', 'Suzy', 'Female', 1987);
+
+insert into Driver
+values ('333', 'David', 'Male', 1976)

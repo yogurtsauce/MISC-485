@@ -8,7 +8,8 @@ create table Driver (
 create table Vehicle (
     LicensePlateNumber varchar not null primary key,
     Make varchar not null,
-    Model varchar not null
+    Model varchar not null,
+    Year int not null
 );
 
 create table Officer (

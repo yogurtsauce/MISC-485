@@ -9,13 +9,24 @@ ListOfTables = [
     'VehicleDim',
     'OfficerDim',
     'TicketTypeDim',
-    'TicketRevenueFactTable'
+    'TicketRevenueFactTable',
+    'Driver',
+    'Vehicle',
+    'Officer',
+    'ParkingTicketType',
+    'DrivingTicketType',
+    'ParkingTicket',
+    'DrivingTicket'
 ]
 
 for table in ListOfTables:
     cursor.execute(f"drop table if exists {table}")
 
 with open(r"input/queries/CreateWarehouseTables.sql") as sql:
+    query = sql.read()
+cursor.executescript(query)
+
+with open(r"input/queries/CreateOperationalTables.sql") as sql:
     query = sql.read()
 
 cursor.executescript(query)
