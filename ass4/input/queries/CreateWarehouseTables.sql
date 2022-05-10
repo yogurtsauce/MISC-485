@@ -48,6 +48,7 @@ create table TicketRevenueFactTable (
     CalendarKey integer not null references CalendarDim([Key]),
     OfficerKey integer not null references OfficerDim([Key]),
     PayerKey integer not null references PayerDim([Key]),
-    VehicleKey integer not null references VehicleDim([Key])
+    VehicleKey integer not null references VehicleDim([Key]),
+    TicketTypeKey integer not null references TicketTypeDim([Key])
 );
 

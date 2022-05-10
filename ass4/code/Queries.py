@@ -48,4 +48,5 @@ def query2(filename): #no row names
 query('TableNames')
 # query2('Officer')
 query2('PopulateOfficerDim')
-query('ViewOfficerDim')
+# query('ViewOfficerDim')
+query2('populateofficerdim')
