@@ -4,8 +4,8 @@ conn = sqlite3.connect('database/database.db')
 cursor = conn.cursor()
 
 ListOfTables = [
-    'CalendarDim',
     'PayerDim',
+    'CalendarDim',
     'VehicleDim',
     'OfficerDim',
     'TicketTypeDim',
@@ -26,8 +26,8 @@ with open(r"input/queries/CreateWarehouseTables.sql") as sql:
     query = sql.read()
 cursor.executescript(query)
 
-with open(r"input/queries/CreateOperationalTables.sql") as sql:
-    query = sql.read()
+# with open(r"input/queries/CreateOperationalTables.sql") as sql:
+#     query = sql.read()
 
 cursor.executescript(query)
 
