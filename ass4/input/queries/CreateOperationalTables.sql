@@ -1,3 +1,13 @@
+drop table if exists Driver;
+drop table if exists Vehicle;
+drop table if exists Officer;
+drop table if exists ParkingTicketType;
+drop table if exists DrivingTicketType;
+drop table if exists ParkingTicket;
+drop table if exists DrivingTicket;
+
+
+
 create table Driver (
     DriversLicenseNumber varchar not null primary key,
     [Name] varchar not null,

@@ -1,3 +1,10 @@
+drop table if exists PayerDim;
+drop table if exists VehicleDim;
+drop table if exists CalendarDim;
+drop table if exists OfficerDim;
+drop table if exists TicketTypeDim;
+drop table if exists TicketRevenueFactTable;
+
 create table PayerDim (
     [Key] integer not null primary key autoincrement,
     DLN varchar not null,
