@@ -46,6 +46,7 @@ def query2(filename): #no row names
 
 
 query('TableNames')
+
 query2('PopulateOfficerDim')
 query2('PopulateVehicleDim')
 query2('PopulateTicketTypeDim')
